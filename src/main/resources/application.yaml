@@ -11,10 +11,10 @@ spring:
           uri: lb://USER-SERVICE
           predicates:
             - Path=/users/**
-        - id: music-service
-          uri: lb://MUSIC-SERVICE
-          predicates:
-            - Path=/music/**
+#        - id: music-service
+#          uri: lb://MUSIC-SERVICE
+#          predicates:
+#            - Path=/music/**
       discovery:
         locator:
           enabled: true # Enable service discovery for dynamic routing
